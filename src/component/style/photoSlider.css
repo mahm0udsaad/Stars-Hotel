@@ -44,3 +44,9 @@
     height: 90%; 
   }
 }
+@media screen and (max-width: 768px) {
+  .top-section{
+      height: 90vh;
+  }
+
+}

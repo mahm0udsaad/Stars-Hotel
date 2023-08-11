@@ -1,7 +1,7 @@
 import React ,{useState} from 'react';
 import RoomCard from './roomCard'; 
 import BookForm from './bookForm';
- 
+import TopSection from './topSection'
 const BookingPage = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false); 
   const hotelRooms = [
@@ -68,24 +68,19 @@ const BookingPage = () => {
       const closeModal = () => {
           setModalIsOpen(false)
       }
-
   return (
     <>
-    <div className='block relative overflow-hidden'>
-        <div className='top-section relative h-screen lg:h-4/5 overflow-hidden'>
-        <div className='wrap top-0 absolute  w-full h-full bg-black opacity-20 z-10 overflow-hidden'></div>
-          <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGhvdGVsJTIwcm9vbXxlbnwwfDB8MHx8fDI%3D&auto=format&fit=crop&w=400&q=60" className='h-full w-full' alt="Header Background" />
-          <div className="container absolute topp-40 text-white text-center z-20">
-          <h1 className="text-5xl font-semibold mb-2">Book Your Stay</h1>
-          <p className="text-lg my-5">Choose from a variety of luxurious rooms for a comfortable and memorable stay.</p>
-        </div>
-        </div>
-      </div>
+      <TopSection  
+      header={'Book Your Stay'}
+      paragraph={'Choose from a variety of luxurious rooms for a comfortable and memorable stay.'}
+      image={"https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGhvdGVsJTIwcm9vbXxlbnwwfDB8MHx8fDI%3D&auto=format&fit=crop&w=400&q=60"}
+      />
+      
     <div className="container w-4/5 mx-auto py-8">
     <h1 className="text-3xl font-semibold mb-4">Hotel Rooms</h1>
     <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       <BookForm
-          modalClassName={`modal lg:w-4/5 w-5/6 relative transition-opacity duration-300 ${modalIsOpen ? 'opacity-100' : 'opacity-0 hidden'}`}
+          modalClassName={`modal lg:w-4/5 w-full relative transition-opacity duration-300 ${modalIsOpen ? 'opacity-100' : 'opacity-0 hidden'}`}
           isOpen={modalIsOpen}
           closeModal={closeModal}
         />

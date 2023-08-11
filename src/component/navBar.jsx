@@ -35,10 +35,10 @@ const NavBar = () => {
             ☰
           </button>
           <Link to={'/'} className="logo text-center">
-            <h1 className="italic text-4xl font-medium">Azure Waves</h1>
+            <h1 className="italic text-xl lg:text-4xl font-medium">Azure Waves</h1>
             <p className="text-xs">HOTELIERS SINCE 1997</p>
           </Link>
-          <div className={`sm:flex mt-4 sm:mt-0`}>
+          <div className={`sm:flex mt-2 sm:mt-0`}>
             <Link to={'/book'} className=" p-3 text-lg mr-4 border-solid border-2 border-opacity-50 border-stone-300 hover:bg-opacity-50 hover:bg-orange-300 hover:text-white ease-in duration-200">
               Book
             </Link>

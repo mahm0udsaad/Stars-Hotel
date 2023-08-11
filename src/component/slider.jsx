@@ -53,18 +53,18 @@ const PhotoSlider = () => {
     <div className='top-0 absolute content-center w-full h-full bg-dark opacity-30 bg-slate-300'></div>
     <div className="container absolute topp-40 text-white text-center z-20">
       <h1 className='italic text-8xl font-medium'>Luxury Retreat</h1>
-      <p className='text-xl my-5'>Unveiling a World of Elegance and Comfort</p>
+      <p className='text-2xl my-5'>Unveiling a World of Elegance and Comfort</p>
     </div>
       </div>
     <div className="container mx-5 w-5/6 mt-10">
           {hotelServices.map(({description,title ,image}, index) => (
-                            <Card 
-                            key={index}
-                            description={description}
-                            title={title}
-                            image={image}
-                          />
-                          ))}
+              <Card 
+              key={index}
+              description={description}
+              title={title}
+              image={image}
+            />
+            ))}
     </div>
     </>
   );

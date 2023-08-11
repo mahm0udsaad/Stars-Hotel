@@ -8,6 +8,7 @@ import BookForm from './component/bookForm';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Overview from './component/overView'
 import Footer from './component/footer'
+import AboutPage from './component/about'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/bookForm" element={<BookForm />} />
         <Route path="/book" element={<BookingPage />} />
         <Route path='/resturants' element={<Resturants />} />
+        <Route path='/about' element={<AboutPage />} />
       </Routes>
       <Footer />
     </Router>

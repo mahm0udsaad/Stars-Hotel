@@ -1,5 +1,8 @@
 import RestaurantSection from "./resturantSection";
 import Card from './viewCard'
+import './style/photoSlider.css'
+import TopSection from './topSection'
+
 const Overview = () => {
     const hotelOverview = [
         {
@@ -45,15 +48,11 @@ const Overview = () => {
       ];
     return ( 
         <>
-            <div className='block relative overflow-hidden'>
-                    <div className='top-section relative h-screen lg:h-4/5 overflow-hidden'>
-                    <div className='wrap top-0 absolute  w-full h-screen bg-black opacity-20 z-10 overflow-hidden'></div>
-                    <img src="https://images.unsplash.com/photo-1466499855940-3d95a5277898?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhvdGVsJTIwb3ZlcnZpZXd8ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=400&q=60" className='h-full w-full' alt="Header Background" />
-                        <div className="container absolute topp-40 text-white text-center z-20">
-                        <h1 className="italic text-8xl font-medium">Luxury Retreat Hotel</h1>
-                        <p className="text-xl my-5">Unforgettable Experiences Await You</p>
-                        </div>
-                    </div>
+                <TopSection  
+                  header={'Luxury Retreat Hotel'}
+                  paragraph={'Unforgettable Experiences Await You'}
+                  image={"https://images.unsplash.com/photo-1466499855940-3d95a5277898?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhvdGVsJTIwb3ZlcnZpZXd8ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=400&q=60"}
+                  />
                 <div className="container w-4/5 mx-auto mt-10">
                     {hotelOverview.map(({description,title ,image}, index) => (
                            <Card 
@@ -64,7 +63,6 @@ const Overview = () => {
                            />
                     ))}
                     </div>
-            </div>
         </>
      );
 }

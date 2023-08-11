@@ -56,7 +56,7 @@ const PhotoSlider = () => {
       <p className='text-2xl my-5'>Unveiling a World of Elegance and Comfort</p>
     </div>
       </div>
-    <div className="container mx-5 w-5/6 mt-10">
+    <div className="container mx-5 w-11/12 lg:w-5/6 mt-10">
           {hotelServices.map(({description,title ,image}, index) => (
               <Card 
               key={index}

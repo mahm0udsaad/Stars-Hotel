@@ -7,6 +7,7 @@ import NavBar from './component/navBar'
 import BookForm from './component/bookForm';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Overview from './component/overView'
+import Footer from './component/footer'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/book" element={<BookingPage />} />
         <Route path='/resturants' element={<Resturants />} />
       </Routes>
+      <Footer />
     </Router>
     </>
   )

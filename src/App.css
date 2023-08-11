@@ -1,0 +1,9 @@
+.ReactModal__Overlay{
+    z-index: 80;
+}
+.title p{
+    letter-spacing: 5px;
+}
+.title h2{
+    letter-spacing: 6px;
+}

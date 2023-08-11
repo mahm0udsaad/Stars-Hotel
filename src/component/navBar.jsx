@@ -30,12 +30,12 @@ const NavBar = () => {
   return (
     <>
       <nav className={`w-full z-50 py-3 ${onScroll ? 'fixed bg-white text-black':'absolute bg-transparent text-white'}`}>
-        <div className="container mx-2 flex justify-between items-center">
-          <button onClick={handleMenuToggle} className="text-4xl mb-18">
+        <div className="container flex justify-between items-center">
+          <button onClick={handleMenuToggle} className="text-4xl ml-5 mb-18">
             ☰
           </button>
           <Link to={'/'} className="logo text-center">
-            <h1 className="italic text-4xl font-medium">Stars</h1>
+            <h1 className="italic text-4xl font-medium">Azure Waves</h1>
             <p className="text-xs">HOTELIERS SINCE 1997</p>
           </Link>
           <div className={`sm:flex mt-4 sm:mt-0`}>

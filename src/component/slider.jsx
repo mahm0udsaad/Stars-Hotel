@@ -33,7 +33,7 @@ const PhotoSlider = () => {
     <>
       <div className="relative">
     <Carousel
-      className='relative carousel'
+      className='relative carousel cover'
       showStatus={false}
       showThumbs={false}
       infiniteLoop={true}
@@ -50,7 +50,7 @@ const PhotoSlider = () => {
         <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG90ZWx8ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=700&q=60" alt="Slide 3" />
       </div>
     </Carousel>
-    <div className='top-0 absolute content-center w-full h-full bg-dark opacity-30 bg-slate-300'></div>
+    <div className='top-0 cover absolute content-center w-full bg-dark opacity-30 bg-slate-300'></div>
     <div className="container absolute topp-40 text-white text-center z-20">
       <h1 className='italic text-8xl font-medium'>Luxury Retreat</h1>
       <p className='text-2xl my-5'>Unveiling a World of Elegance and Comfort</p>

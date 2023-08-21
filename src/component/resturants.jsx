@@ -41,10 +41,10 @@ const Resturants = () => {
       <>
         <div className='block relative overflow-hidden'>
         <div className='top-section relative lg:h-screen lg:h-4/5 overflow-hidden'>
-        <div className='wrap top-0 absolute  w-full h-screen bg-black opacity-20 z-10 overflow-hidden'></div>
+        <div className='wrap top-0 absolute  w-full h-screen bg-black opacity-50 z-10 overflow-hidden'></div>
           <img src="https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudHN8ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=400&q=60" className='h-full w-full' alt="Header Background" />
           <div className="container absolute topp-40 text-white text-center z-20">
-            <h1 className="italic text-8xl font-medium">Fine Dining Delights</h1>
+            <h1 className="italic text-6xl lg:text-8xl font-medium">Fine Dining Delights</h1>
             <p className="text-xl my-5">Experience exquisite flavors and culinary artistry at our upscale fine dining restaurants.</p>
           </div>
         </div>

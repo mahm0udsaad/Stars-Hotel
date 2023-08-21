@@ -53,7 +53,7 @@ const Overview = () => {
                   paragraph={'Unforgettable Experiences Await You'}
                   image={"https://images.unsplash.com/photo-1466499855940-3d95a5277898?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGhvdGVsJTIwb3ZlcnZpZXd8ZW58MHwwfDB8fHwy&auto=format&fit=crop&w=400&q=60"}
                   />
-                <div className="container w-11/9 lg:w-4/5 mx-auto mt-10">
+                <div className="container w-11/12 lg:w-4/5 mx-auto mt-10">
                     {hotelOverview.map(({description,title ,image}, index) => (
                            <Card 
                             key={index}

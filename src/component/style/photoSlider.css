@@ -38,15 +38,28 @@
   justify-content: center;
   align-items: center;
 }
-
+.carousel .carousel-slider{
+  height: 100%;
+}
 @media (min-width: 1024px ) {
   .wrap {
     height: 90%; 
   }
+
 }
 @media screen and (max-width: 768px) {
   .top-section{
-      height: 90vh;
+      height: 80vh;
   }
+  .cover{
+    height: 80vh;
+  }
+  .slide {
+    height: 80vh;
+  }
+  .topp-40{
+    top: 35%;
+  }
+
 
 }

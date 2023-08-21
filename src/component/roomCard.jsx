@@ -1,9 +1,25 @@
-import React ,{useState} from 'react';
+import React ,{useState ,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import BookForm from './bookForm';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const RoomCard = ({ id, name, description, price, image ,openModal}) => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true });
+  
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: -20 });
+    }
+  }, [controls, inView]);
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <motion.div
+    ref={ref}
+    initial={{ opacity: 0, y: 20 }}
+    animate={controls}
+    transition={{ duration: 0.7 }}
+    className="bg-white rounded-lg shadow-md overflow-hidden">
       <img src={image} alt={name} className="w-full h-40 object-cover" />
       <div className="p-4">
         <h2 className="text-xl font-semibold mb-2">{name}</h2>
@@ -13,7 +29,7 @@ const RoomCard = ({ id, name, description, price, image ,openModal}) => {
           Book Now
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
